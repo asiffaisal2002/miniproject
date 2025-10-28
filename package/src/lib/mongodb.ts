@@ -1,4 +1,10 @@
 import mongoose from "mongoose";
+import { MongoClient } from "mongodb";
+
+const client = new MongoClient(process.env.MONGODB_URI!);
+const clientPromise = client.connect();
+
+export default clientPromise;
 
 export const connectToDB = async () => {
   if (mongoose.connection.readyState >= 1) return;

@@ -86,16 +86,19 @@ const Header: React.FC = () => {
               />
             </button>
             <div className={`hidden md:block`}>
-              <Link href='#' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHomepage
-                ? sticky
-                  ? 'text-dark dark:text-white hover:text-primary border-dark dark:border-white'
-                  : 'text-white hover:text-primary'
-                : 'text-dark hover:text-primary'
-                }`}
+              <Link
+                href="/mentorship"
+                className={`text-base flex items-center gap-2 border-r pr-6 ${isHomepage
+                  ? sticky
+                    ? 'text-dark dark:text-white hover:text-primary border-dark dark:border-white'
+                    : 'text-white hover:text-primary'
+                  : 'text-dark hover:text-primary'
+                  }`}
               >
-                <Icon icon={'ph:phone-bold'} width={24} height={24} />
-                +1-212-456-789
-              </Link>
+  <Icon icon="mdi:school-outline" width={24} height={24} />
+  Mentorship
+</Link>
+
             </div>
             <div>
               <button
